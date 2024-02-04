@@ -1,0 +1,78 @@
+<%- include('partials/header.ejs') %>
+
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="Appointments">
+        <hr>
+        <a href="#">Appointments</a>
+    </div>
+    <div class="Appointments">
+      <hr>
+      <a href="/#">Schedule</a>
+  </div>
+  <div class="Appointments">
+    <hr>
+    <a href="/#"> Pinned Users</a>
+</div>
+<div class="Appointments">
+  <hr>
+  <a href="/doctor/history"> History </a>
+</div>
+<div class="Appointments">
+  <hr>
+  <a href="/#"> Chats </a>
+</div>
+  </div>
+</div>
+
+<form action="/doc-details" method="post">
+
+  <div class="doc">
+    <div>
+      <h1>Doctor Details </h1>
+      <h2>Doctor Name</h2>
+      <input type="text" id="username" name="username" required>
+    </div>
+    <div>
+      <h3>Email</h3>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <h3>password</h3>
+      <input type="password" id="password" name="password" required>
+    </div>
+    <div>
+      <h3>
+        specialization
+      </h3>
+      <input type="text" id="specialization" name="specialization" required>
+    </div>
+    <div>
+      <h3>Hospital Or Clinic Name</h3>
+  <input type="text" name="clinic_name">
+    </div>
+    <div>
+      <h3>Clinic or Hospital Address</h3>
+      <textarea name="clinic" id="" cols="30" rows="10" required></textarea>
+    </div>
+    <div>
+      <h3>Contact Number</h3>
+      <input type="text" id="contactNumber" name="contactNumber" required>
+    </div>
+    <br>
+    <div>
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </div>
+  
+</form>
+
+
+
+<%- include('partials/footer.ejs') %>

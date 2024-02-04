@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+
+
+<% for(i=0;i<Doc_det.length;i++){ %>
+    <div class="appointments">
+<hr>
+            <h2><%=Doc_det[i].name%></h2>
+            <h3><%=Doc_det[i].clinic_name%></h3>
+            <p><%=Doc_det[i].clinicAddress%></p>
+        
+
+        <div class="appoint">
+            <button class="btn btn-primary"><a href="/book/<%=Doc_det[i].name%>">Book an Appointment</a></button>
+        </div>
+    <hr>
+</div>
+    <% } %>
+
+<%- include('partials/footer.ejs') %>

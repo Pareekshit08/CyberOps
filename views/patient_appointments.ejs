@@ -1,0 +1,19 @@
+<%- include('partials/header.ejs') %>
+
+
+<% for(i=0;i<pat_det.length;i++){ %>
+    <div class="appointments">
+<hr>
+            <h2><%=pat_det[i].name%></h2>
+            <h3><%=pat_det[i].patient_detail%></h3>
+            <h3><%=pat_det[i].time_slot%></h3>
+            <h3><%=pat_det[i].contact%></h3>
+        
+        <div class="appoint">
+            <button class="btn btn-primary"><a href="#">Appoint</a></button>
+        </div>
+    <hr>
+</div>
+    <% } %>
+
+<%- include('partials/footer.ejs') %>

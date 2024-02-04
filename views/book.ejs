@@ -1,0 +1,42 @@
+<%- include('partials/header.ejs') %>
+
+<div>
+   
+    <h1>Hospital : <%=doc_det.clinic_name%></h1>
+    <h3>Name : <%=doc_det.name%></h3>
+    <h4>Specialization : <%=doc_det.specialization%></h4>
+    <div class="address" >
+        <h4>Address : <%=doc_det.clinicAddress%></h4>
+    </div>
+    
+    <h5>Contact : <%=doc_det.contactNumber%></h5>
+    
+    <hr>
+
+<form action="/book-patient" method="post">
+    <input type="hidden" name="doc_name" value="<%=doc_det.name%>">
+    <h2>Name</h2>
+    <input type="text" name="name" required>
+    <br>
+    <h4>Age</h4>
+    <input type="text" name="age" required >
+    <br>
+    <h4>Gender<h4>
+    <input type="text" name="gender" required >
+    <br>
+    <h4>Specific Patient Details</h4>
+    <textarea name="patient_dept_details" id="" cols="30" rows="10"></textarea>
+    <br> <br>
+    <h4>Mention the time slot</h4>
+    <input type="text" name="slot">
+<br>
+    <h4>Contact Number</h4>
+    <input type="text" name="contactNumber" required>
+    <br> <br>
+        <button class="btn btn-primary" type="submit">Book Appoitment</button>
+</form>
+
+</div>
+</div>
+
+<%- include('partials/footer.ejs') %>

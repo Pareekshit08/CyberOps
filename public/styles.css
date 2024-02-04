@@ -1,0 +1,119 @@
+
+body{
+    background-image: url(images/bul.jpeg); 
+    background-size: cover;
+}
+.offcan button{
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: white;
+    border-color: white;
+}
+
+.Appointments a{
+    text-decoration: none;
+    color: black;
+}
+
+form{
+    text-align: left;
+}
+
+form h2,form h3,form h4{
+    color: rgb(4, 45, 81);
+}
+
+input{
+    width: 100%;
+    /* border-top: none;
+    border-right: none;
+    border-left:none; */
+    border-radius: 10px;
+    border-width: solid rgb(27, 85, 193);
+    border-color:rgb(32, 26, 213);
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    border-color: rgb(15, 15, 15);
+    outline: none;
+}
+
+.container{
+    padding:10px;
+    padding-top: 0px;
+}
+
+.appoint button{
+    width: 100%;
+
+}
+.appoint a{
+    text-align: center;
+    color:white;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+
+.log a{
+    text-decoration: none;
+    color:white
+}
+
+.address
+{
+padding: 6px;
+border-radius: 3px;
+background-color: rgb(57, 198, 214);
+}
+
+.doc
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 4px;
+    background-color: aliceblue;
+    padding: 4px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.patient
+{
+    width: 80%;
+    margin: auto;
+    margin-top: 4px;
+    background-color: rgba(240, 248, 255, 0.511);
+    padding: 4px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.appointments
+{
+    /* width: 80%; */
+    margin: auto;
+    margin-top: 4px;
+    background-color: aliceblue;
+    padding: 4px;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.login-in button{
+    width: 100%;
+}
+
+.login-in{
+width: 80%;
+height: 80%;
+margin:auto;
+}
+
+.login{
+    text-align: center;
+}
+
+.docting{
+    color:white;
+}

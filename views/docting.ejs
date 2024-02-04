@@ -1,0 +1,38 @@
+<%- include('partials/header.ejs') %>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+<div class="offcanvas-body">
+    <div class="Appointments">
+        <hr>
+        <a href="/patient_appointments/<%=doc.name%>">Patient Appointments</a>
+    </div>
+    <div class="Appointments">
+      <hr>
+      <a href="/doctoring">Update Details</a>
+  </div>
+    <div class="Appointments">
+      <hr>
+      <a href="/#">Schedule</a>
+  </div>
+  <div class="Appointments">
+    <hr>
+    <a href="/#"> Pinned Users</a>
+</div>
+<div class="Appointments">
+  <hr>
+  <a href="/doctor/history"> History </a>
+</div>
+<div class="Appointments">
+  <hr>
+  <a href="/#"> Chats </a>
+</div>
+  </div>
+</div>
+<div class="docting">
+    <h1>Welcome Doctor <%=doc.name%></h1>
+</div>
+
+<%- include('partials/footer.ejs') %>

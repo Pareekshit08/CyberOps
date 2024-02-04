@@ -1,0 +1,55 @@
+<%- include('partials/header.ejs') %>
+
+<!-- offcanvas -->
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="Appointments">
+          <hr>
+          <a href="/appointments">Appointments</a>
+      </div>
+      <div class="Appointments">
+        <hr>
+        <a href="#">History</a>
+    </div>
+    <div class="Appointments">
+      <hr>
+      <a href="#">Medications</a>
+  </div>
+    </div>
+  </div>
+
+<!-- offcanvas -->
+
+<div class="patient">
+
+<form action="/patient-details" method="post">
+
+  <hr>
+  <h1>User Registration</h1>
+
+    <h2>Name</h2>
+    <input type="text" name="name" required>
+
+    <h4>Age</h4>
+    <input type="text" name="age" required >
+
+    <h4>Gender<h4>
+    <input type="text" name="gender" required >
+
+    <h4>Specific Patient Details</h4>
+    <textarea name="patient_dept_details" id="" cols="30" rows="10"></textarea>
+
+    <h4>Contact Number</h4>
+    <input type="text" name="contactNumber" required>
+    <br> <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+</form>
+
+</div>
+
+<%- include('partials/footer.ejs') %>
